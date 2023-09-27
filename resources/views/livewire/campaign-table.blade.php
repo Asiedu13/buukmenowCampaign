@@ -1,4 +1,5 @@
 <section class="mt-[40px]">
+    @if($data)
         <table class="bg-[white] max-h-[480px] rounded-xl border border-[#F2F2F2]">
             <tr class=" h-[64px] border-b-2 border-[#F2F2F2] ">
                 <th class="w-[217px] h-[64px] text-sm font-medium bg-[#ECECEB] text-left pl-[24px]">Campaign Title</th>
@@ -9,20 +10,29 @@
 
             {{-- Rows with data from campaign-table-row --}}
             @foreach($data as $dataItem)
-                @livewire('campaign-table-row', [
-                    'campaignTitle' => $dataItem->title,
-                    'description' => $dataItem->description,
-                    'targetGroup' => $dataItem->target_group,
-                    'campaignStatus' => $dataItem->status
+                    @livewire('campaign-table-row', [
+                    'campaignTitle' => $dataItem['title'],
+                    'description' => $dataItem['description'],
+                    'targetGroup' => $dataItem['target_group'],
+                    'campaignStatus' => $dataItem['status']
                 ] )
+
 
             @endforeach
             </table>
             
             {{-- Pagination --}}
+            {{-- <section> 
+                {{$data->links()}}
+            </section> --}}
+
             <section>
-                
-                {{$data->links('livewire.simple-tailwind')}}
+
             </section>
 
+        @else
+            <section>
+                Nothing found
+            </section>
+    @endif
 </section>

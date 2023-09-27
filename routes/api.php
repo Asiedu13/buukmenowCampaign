@@ -21,5 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::group(['namespace' => 'App\Http\Controllers\Api\V1'], function(){
+    Route::get('/campaign/search', [CampaignController::class, 'search']);
     Route::apiResource('/campaign', CampaignController::class);
+
 });

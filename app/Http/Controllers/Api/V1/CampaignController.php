@@ -3,10 +3,13 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Campaign;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Requests\StoreCampaignRequest;
 use App\Http\Requests\UpdateCampaignRequest;
+
+use function Laravel\Prompts\search;
 
 class CampaignController extends Controller
 {
@@ -84,6 +87,8 @@ class CampaignController extends Controller
         
     }
 
+
+
     /**
      * Show the form for editing the specified resource.
      */
@@ -125,6 +130,46 @@ class CampaignController extends Controller
      */
     public function destroy( $campaign)
     {
+        $foundCampaign = Campaign::find($campaign);
+
+        if(is_null($foundCampaign)) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Campaign does not exist'
+            ]);
+        }
+
+        $foundCampaign->delete();
+        return response()->json([
+                'status' => true,
+                'data' => $foundCampaign,
+            ]);
         
+    }
+
+  
+    public function search(Request $request)
+    {
+        $searchQuery = $request->input('query');
+        // dd($searchQuery);
+        $theCampaign = Campaign::where('title', 'LIKE', '%'.$searchQuery.'%')
+                    ->orWhere('description', 'LIKE', '%'.$searchQuery.'%')
+                    ->orWhere('target_group', 'LIKE', '%'.$searchQuery.'%')
+                    ->orWhere('status', 'LIKE', '%'.$searchQuery.'%')
+                    ->get();
+        
+        if (! is_null($theCampaign)) {
+            
+            return response()->json([
+                'status' => true,
+                'data' => $theCampaign
+            ]);
+        }
+        return response()->json(
+            [
+                'status' => false,
+                'error' => 'Campaign not found!'
+            ], 404
+            );
     }
 }
