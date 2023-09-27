@@ -16,13 +16,13 @@
                     'campaignStatus' => $dataItem->status
                 ] )
 
-                 {{$data->links()}}
             @endforeach
-        </table>
-
-        {{-- Pagination --}}
-        <section>
-           
-        </section>
+            </table>
+            
+            {{-- Pagination --}}
+            <section>
+                
+                {{$data->links('livewire.simple-tailwind')}}
+            </section>
 
 </section>
