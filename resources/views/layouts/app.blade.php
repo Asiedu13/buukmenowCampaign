@@ -10,9 +10,12 @@
         @vite('resources/css/app.css')
     </head>
     <body class="bg-[#F3F4F6]">
-        <nav class="h-[90px] w-[100vw] bg-[white] p-[10px] flex justify-center items-center">
+        <nav class="h-[90px] w-[100vw] bg-[white] p-[10px] m-[auto] mb-[20px]">
+            <section class="w-[80vw] ml-[144.68px] flex space-between items-center">
+
+          
             {{-- Logo goes here --}}
-            <section class="logo mx-[110.68px]">
+            <section class="logo ml-[40.68px] mr-[100px] ">
                 <img class="h-[24px]" src="../media/buukmenowlogo.png" alt="buukmenow logo">
             </section>
 
@@ -85,10 +88,11 @@
                     </svg>
                 </div>
             </section>
+            </section>
         </nav>
         
         <main class="w-[1440px] h-[990px] flex justify-center">
-            <section class="w-[1050px] h-[990px] m-[auto] ">
+            <section class="w-[1040px] h-[990px] m-[auto] ">
                 @yield('main')
             </section>
         </main>
