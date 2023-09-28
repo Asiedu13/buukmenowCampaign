@@ -21,6 +21,7 @@
     @livewire('campaign-table', [$data])
     
     @livewire('create-campaign')
+  
 </div>
 
 

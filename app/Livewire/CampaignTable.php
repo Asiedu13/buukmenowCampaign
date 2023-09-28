@@ -9,7 +9,7 @@ use Livewire\WithPagination;
 
 class CampaignTable extends Component
 {
-    // use WithPagination;
+    use WithPagination;
     public $collection = '';
     
     public $data = [];
@@ -22,6 +22,7 @@ class CampaignTable extends Component
         $this->data = [];
         $this->search =  $search;
         $response = Http::get("http://buukmenow.test/api/campaign/search?query=$search")->json();
+        $this->collection = $response;
         
         $this->data = $response['data'];
     }

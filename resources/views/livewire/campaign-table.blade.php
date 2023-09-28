@@ -22,9 +22,9 @@
             </table>
             
             {{-- Pagination --}}
-            {{-- <section> 
-                {{$data->links()}}
-            </section> --}}
+            <section> 
+                {{-- {{$collection->('links')}} --}}
+            </section>
 
             <section>
 

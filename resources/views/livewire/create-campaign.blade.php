@@ -1,6 +1,6 @@
 
 <section class="w-[100vw] h-[100vh] bg-transparent-rgba absolute top-0 left-0 {{$show}} justify-center items-center rounded-md ">
-        <div class="w-[502px] h-[756px] bg-[white] p-[32px]">
+        <div class="w-[502px] h-[756px] bg-[white] p-[32px] ">
         <header class="flex items-center mb-[40px]" >
             <svg class="mr-[8px]" xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
             <path d="M11.0968 12.5195H5.08017" stroke="#00100B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

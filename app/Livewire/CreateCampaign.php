@@ -24,7 +24,9 @@ class CreateCampaign extends Component
         }
 
     }
-
+    public function stayOnScreen(){
+        $this->show = "flex";
+    }
     public function addCampaign()
     {
        
@@ -35,6 +37,7 @@ class CreateCampaign extends Component
         'status' => 'Active'
     ]);
         $e = $response->json();
+        $this->displayForm();
 
     }
 

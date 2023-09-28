@@ -38,7 +38,7 @@ class CampaignController extends Controller
 
     public function index()
     {
-        $campaigns = Campaign::paginate(10);
+        $campaigns = Campaign::orderByDesc('id')->paginate(10);
         return $this->sendGoodResponse($campaigns);
       
     }
@@ -155,7 +155,7 @@ class CampaignController extends Controller
         $theCampaign = Campaign::where('title', 'LIKE', '%'.$searchQuery.'%')
                     ->orWhere('description', 'LIKE', '%'.$searchQuery.'%')
                     ->orWhere('target_group', 'LIKE', '%'.$searchQuery.'%')
-                    ->orWhere('status', 'LIKE', '%'.$searchQuery.'%')
+                    ->orWhere('status', 'LIKE', '%'.$searchQuery.'%')->orderByDesc('id')
                     ->get();
         
         if (! is_null($theCampaign)) {
