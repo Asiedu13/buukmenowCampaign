@@ -6,7 +6,7 @@
     </header>
 
 
-    <nav class="h-[50px] w-[939px] mt-[45px] flex  border-b-2 ">
+    <nav class="h-[50px] w-[1050px] mt-[45px] flex  border-b-2 ">
         <button wire:click="showCustomerLog" class="w-[106px] h-[50px] text-sm text-[#808785]  flex justify-center mr-[12px] hover:border-b-2 border-[#00100B] 
         hover:text-[#00100B] focus:border-b-2 border-[#00100B] focus:text-[#00100B]">
         Customer Log

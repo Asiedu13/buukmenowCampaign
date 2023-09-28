@@ -7,9 +7,9 @@
             </svg>
             <input wire:model.lazy="search" class="w-[478px] h-[48px] outline-none text-sm rounded-md" type="text" placeholder="Search customer log by customer name, email address & phone number">
         </section>
-        <button wire:click="searchItem" class="w-[92px] h-[64px] border-solid border-2 border-[#004741] rounded-md bg-[white] mr-[226px]">Search</button>
-        <button wire:click='create' class="bg-[#004741] text-[white] h-[64px] w-[248px] flex items-center space-between rounded-md">
-            <svg class="ml-[16px] mr-[10px]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <button wire:click="searchItem" class="w-[92px] h-[64px] border-solid border-2 border-[#004741] rounded-md bg-[white] mr-[190px] p-[16px]">Search</button>
+        <button wire:click='create' class="bg-[#004741] text-[white] h-[64px] w-[248px] flex items-center space-between p-[16px] rounded-md">
+            <svg class="mr-[16px]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
             <g id="Iconly/Light/Document">
             <g id="Document">
             <path id="Stroke 1" d="M13.0969 13.5195H7.0802" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
