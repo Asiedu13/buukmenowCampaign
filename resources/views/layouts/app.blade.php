@@ -88,9 +88,8 @@
         </nav>
         
         <main class="w-[1440px] h-[990px] flex justify-center">
-            <section class="w-[1050px] h-[990px] ml-[110px] ">
+            <section class="w-[1050px] h-[990px] m-[auto] ">
                 @yield('main')
-
             </section>
         </main>
 
