@@ -46,7 +46,7 @@
                 </li>
 
                 <li class="w-[140px] mr-[3px] text-[#808785]  ">
-                    <a href="#" class="w-[140px] h-[36px] flex items-center px-[12px] py-[8px] justify-center text-[#808785] hover:bg-[#F3F4F6] hover:text-[#00100B] rounded-3xl focus:bg-[#F3F4F6] focus:text-[#00100B] ">
+                    <a href="#" class="w-[140px] h-[36px] flex items-center px-[12px] py-[8px] justify-center text-[#808785] bg-[#F3F4F6] text-[#00100B] hover:bg-[#F3F4F6] hover:text-[#00100B] rounded-3xl focus:bg-[#F3F4F6] focus:text-[#00100B] ">
                     <svg class="mr-[8px]" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                     <path d="M15.5682 9.0806C16.7307 8.91726 17.6257 7.9206 17.6282 6.7131C17.6282 5.5231 16.7607 4.53643 15.6232 4.34976" stroke="#00100B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M17.1023 11.8753C18.2281 12.0436 19.014 12.4378 19.014 13.2503C19.014 13.8094 18.644 14.1728 18.0456 14.4011" stroke="#00100B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
