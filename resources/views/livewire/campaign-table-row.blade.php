@@ -1,4 +1,4 @@
-<tr class=" h-[64px] border-b-2 border-[#F2F2F2] ">
+<tr class=" h-[64px] bg-[white] border-b-2 border-[#F2F2F2] ">
     <td class="w-[217px] h-[64px] text-sm font-normal pl-[24px] text-[#55605C]">
         {{$campaignTitle}}
     </td>
