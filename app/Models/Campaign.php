@@ -9,10 +9,4 @@ class Campaign extends Model
 {
     use HasFactory;
 
-    public function getShowAttribute()
-    {
-        return [
-            "show" => true,
-        ][$this->show];
-    }
 }
