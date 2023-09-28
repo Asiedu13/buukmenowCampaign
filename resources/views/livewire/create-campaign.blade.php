@@ -1,4 +1,4 @@
-<section wire:keydown.escape="displayForm" class="w-[100vw] h-[100vh] bg-transparent-rgba absolute top-0 left-0 flex justify-center items-center rounded-md {{$show}} ">
+<section wire:click.self="displayForm" wire:keydown.escape="displayForm" class="w-[100vw] h-[100vh] bg-transparent-rgba fixed top-0 left-0 flex justify-center items-center rounded-md {{$show}} ">
         <div class="w-[502px] h-[756px] bg-[white] p-[32px] ">
         <header class="flex items-center mb-[40px]" >
             <svg class="mr-[8px]" xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
@@ -13,13 +13,13 @@
         <form action="#" wire:submit="addCampaign">
             <div class="flex flex-col mb-[32px]">
                 <label class="text-sm text-[#2B3834] mb-[16px]" for="title">Campaign Title</label>
-                <input wire:model.lazy="title" class='w-[432px] h-[64px] pl-[16px] text-sm border rounded-md outline-none' type="text" id='title' placeholder="Write your campaign title here">
+                <input wire:model.lazy="title" class='w-[432px] h-[64px] pl-[16px] text-sm border rounded-md outline-none placeholder:text-[#CCCFCE]' type="text" id='title' placeholder="Write your campaign title here">
             </div>
 
             <div class="flex flex-col mb-[32px]">
                 <label class="text-sm mb-[16px] text-[#2B3834]" for="description">Description</label>
 
-                <textarea wire:model.lazy="description" class='w-[432px] h-[240px] text-sm border rounded-md outline-none p-[16px]' id='description' placeholder="Write your message here" maxlength="100">
+                <textarea wire:model.lazy="description" class='w-[432px] h-[240px] text-sm border rounded-md outline-none p-[16px] placeholder:text-[#CCCFCE]' id='description' placeholder="Write your message here" maxlength="100">
                 
                 </textarea>
                 <p class="text-[#CCCFCE] text-sm text-right mt-[16px] font-normal relative right-[5px]">Max: 100 words</p>
