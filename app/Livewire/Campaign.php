@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use \App\Models\Campaign as C;
 use Illuminate\Support\Facades\Http;
 
 class Campaign extends Component
@@ -26,6 +25,8 @@ class Campaign extends Component
         // dd($response['data']['data']);
         $this->data = $response['data']['data'];
     }
+
+    
 
     public function render()
     {

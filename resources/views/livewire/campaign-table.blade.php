@@ -15,7 +15,7 @@
                     'description' => $dataItem['description'],
                     'targetGroup' => $dataItem['target_group'],
                     'campaignStatus' => $dataItem['status']
-                ] )
+        ], key($dataItem['id']) )
 
 
             @endforeach

@@ -1,4 +1,4 @@
-<div class="h-[900px] ">
+<div class="h-[900px]">
     <header class="w-[234px] h-[56px] mt-[32px]">
         <h2 class="font-medium text-xl">Customers</h2>
         <p class="text-sm font-normal pt-[16px] text-[#808785]
