@@ -2,7 +2,7 @@
     <td class="w-[217px] h-[64px] text-sm font-normal pl-[24px] text-[#55605C]">
         {{$campaignTitle}}
     </td>
-    <td class="w-[473px] h-[48px] text-sm font-normal text-left text-[#55605C] truncate ... ">
+    <td class="w-[463px] h-[48px] text-sm font-normal text-left text-[#55605C] truncate ">
         {{$description}} {{$showEllipsis}}
     </td>
     <td class="w-[169px] h-[48px] text-sm font-normal text-center text-[#55605C]">

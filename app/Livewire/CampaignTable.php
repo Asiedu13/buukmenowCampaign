@@ -15,7 +15,8 @@ class CampaignTable extends Component
     public $data = [];
     public $search = '';
 
-    protected $listeners = ['searchItem' => 'searchItem'];
+    protected $listeners = ['searchItem' => 'searchItem', 'showCampaign' => 'searchItem'];
+
 
     public function searchItem($search)
     {   
@@ -32,12 +33,14 @@ class CampaignTable extends Component
       $this->data = $info;
     }
 
-    public function updated()
+    public function hydrate()
     {
-        $this->data = [];
-        $response = Http::get("http://buukmenow.test/api/campaign/search?query=$this->search")->json();
+        // $this->data = [];
+        // $response = Http::get("http://buukmenow.test/api/campaign/search?query=$this->search")->json();
             
-        $this->data = $response['data'];
+        // $this->data = $response['data'];
+
+        $this->searchItem('');
     }
 
     public function render()
