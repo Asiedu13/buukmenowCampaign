@@ -39,6 +39,8 @@ class CreateCampaign extends Component
         $e = $response->json();
         $this->displayForm();
 
+        $this->dispatch('createdCampaign', '')->to(CampaignTable::class);
+
     }
 
     public function render()

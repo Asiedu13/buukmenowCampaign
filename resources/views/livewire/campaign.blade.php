@@ -11,7 +11,7 @@
         hover:text-[#00100B] focus:border-b-2 border-[#00100B] focus:text-[#00100B]">
         Customer Log
         </button>
-        <button wire:click="dispatch('showCampaign')" class="w-[106px] h-[50px] text-sm text-[#808785]  flex justify-center mr-[12px] 
+        <button wire:click="showCampaignF" class="w-[106px] h-[50px] text-sm text-[#808785]  flex justify-center mr-[12px] 
         {{$showCampaignStyle}}
         hover:border-b-2 border-[#00100B] 
         hover:text-[#00100B] focus:border-b-2 border-[#00100B] focus:text-[#00100B] focus

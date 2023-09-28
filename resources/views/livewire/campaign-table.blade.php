@@ -1,6 +1,6 @@
 <section class="mt-[40px]">
     @if($data)
-        <table class="bg-[white] max-h-[480px] rounded-xl border border-[#F2F2F2]">
+        <table class="bg-[white] max-h-[480px] rounded-lg border border-[#F2F2F2]">
             <tr class=" h-[64px] border-b-2 border-[#F2F2F2] ">
                 <th class="w-[217px] h-[64px] text-sm font-medium bg-[#ECECEB] text-left pl-[24px]">Campaign Title</th>
                 <th class="w-[413px] h-[64px] text-sm font-medium text-left bg-[#ECECEB] text-ellipsis">Description</th>

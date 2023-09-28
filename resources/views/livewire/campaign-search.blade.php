@@ -1,10 +1,10 @@
  <section class="flex mt-[24px] items-center">
+     {{-- Searcb input --}}
         <section class="w-[565px] h-[64px] bg-[white] pl-4 flex items-center space-between rounded mr-[8px] ">
             <svg class="ml-[10px] mr-[25px]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
             <circle cx="9.80553" cy="9.8055" r="7.49047" stroke="#808885" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M15.0153 15.4043L17.9519 18.3333" stroke="#808885" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            {{-- Searcb input --}}
             <input wire:model.lazy="search" class="w-[478px] h-[48px] outline-none text-sm rounded-md" type="text" placeholder="Search customer log by customer name, email address & phone number">
         </section>
         <button wire:click="searchItem" class="w-[92px] h-[64px] border-solid border-2 border-[#004741] rounded-md bg-[white] mr-[226px]">Search</button>

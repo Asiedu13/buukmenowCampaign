@@ -20,12 +20,12 @@ class Campaign extends Component
 
     //     $this->data = $response['data'];
     // }
-    protected $listeners = ['showCampaign' => 'showCampaign'];
+    // protected $listeners = ['campShow' => 'campShow'];
 
-    public function showCampaign()
+    public function showCampaignF()
     {
         $this->showCampaign = true;
-        $this->showCampaignStyle = 'text-[#00100B] border-b-2 border-[#00100B] ';
+        $this->dispatch('campShow', '')->to(CampaignTable::class);
     }
 
     public function showCustomerLog()
@@ -33,25 +33,12 @@ class Campaign extends Component
         $this->showCampaign = false;
         $this->showCampaignStyle = " ";
     }
+
     public function mount()
     {
        $response = Http::get("http://buukmenow.test/api/campaign/")->json();
-        // dd($response['data']['data']);
         $this->data = $response['data']['data'];
     }
-     
-    public function hydrateShowCampaign() 
-    {
-        if($this->showCampaign) 
-        
-        {
-            $response = Http::get("http://buukmenow.test/api/campaign/")->json();
-        // dd($response['data']['data']);
-        $this->data = $response['data']['data'];
-        }
-    }
-
-    
 
     public function render()
     {
